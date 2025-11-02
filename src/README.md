@@ -14,7 +14,7 @@
 		<img src="https://img.shields.io/thunderstore/v/GymMed/Scene_Tester" alt="Thunderstore Version">
 	</a>
 	<a href="https://github.com/GymMed/Outward-Mods-Communicator/releases/latest">
-		<img src="https://img.shields.io/badge/Mods_Communicator-v1.1.0-D4BD00" alt="Mods Communicator Version">
+		<img src="https://img.shields.io/badge/Mods_Communicator-v1.2.0-D4BD00" alt="Mods Communicator Version">
 	</a>
 </div>
 
