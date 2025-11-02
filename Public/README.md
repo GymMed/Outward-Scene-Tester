@@ -34,7 +34,7 @@ Each rule is checked whenever a scene loads — ensuring your code only runs onc
 I used this in <a
 href="https://thunderstore.io/c/outward/p/GymMed/Loot_Manager/">Loot
 Manager</a> to get all unique enemies data and determine if certain loot should
-be aplied. Outward wiki doesn't provide all data correctly, neither the game is
+be applied. Outward wiki doesn't provide all data correctly, neither the game is
 programmed in consistant order, this tool can help you to retrieve the needed scene data.
 </details>
 
