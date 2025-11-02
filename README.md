@@ -6,6 +6,18 @@
   <img src="https://raw.githubusercontent.com/GymMed/Outward-Scene-Tester/refs/heads/main/preview/images/Logo.png" alt="Logo"/>
 </div>
 
+<div align="center">
+	<a href="https://thunderstore.io/c/outward/p/GymMed/Scene_Tester/">
+		<img src="https://img.shields.io/thunderstore/dt/GymMed/Scene_Tester" alt="Thunderstore Downloads">
+	</a>
+	<a href="https://github.com/GymMed/Outward-Scene-Tester/releases/latest">
+		<img src="https://img.shields.io/thunderstore/v/GymMed/Scene_Tester" alt="Thunderstore Version">
+	</a>
+	<a href="https://github.com/GymMed/Outward-Mods-Communicator/releases/latest">
+		<img src="https://img.shields.io/badge/Mods_Communicator-v1.1.0-D4BD00" alt="Mods Communicator Version">
+	</a>
+</div>
+
 <details>
     <summary>Outward Scene Tester is a tool that automatically loops through scenes and executes functions from your mods.</summary>
 It uses the <a href="https://thunderstore.io/c/outward/p/GymMed/Mods_Communicator/">Mods Communicator</a> framework to communicate with other mods.
