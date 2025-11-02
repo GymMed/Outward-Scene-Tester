@@ -57,6 +57,7 @@ fires it after all action areas a looped and provided action code is executed.
     <summary>Example</summary>
 We'll use a <code>ResourcesPrefabManager.Load</code> patch to ensure Scene Tester is initialized before subscribing:
 <pre><code>using OutwardModsCommunicator;
+...
 [HarmonyPatch(typeof(ResourcesPrefabManager), nameof(ResourcesPrefabManager.Load))]
 public class ResourcesPrefabManager_Load
 {
@@ -96,12 +97,13 @@ actionId (optional) — a string to identify your action (useful for tracking or
 <br><br>
 action — a C# Action delegate (your function reference).
 <br><br>
-hashSetOfAreas — a <code>HashSet< AreaManager.AreaEnum ></code> defining which areas to loop over.
+hashSetOfAreas — a <code>HashSet&lt;AreaManager.AreaEnum&gt;</code> defining which areas to loop over.
 
 <details>
     <summary>Example:</summary>
 <pre><code>using OutwardModsCommunicator;
-HashSet<AreaManager.AreaEnum> areas = new HashSet<AreaManager.AreaEnum>();
+...
+HashSet&lt;AreaManager.AreaEnum&gt; areas = new HashSet&lt;AreaManager.AreaEnum&gt;();
 areas.Add(AreaManager.AreaEnum.Abrassar);
 areas.Add(AreaManager.AreaEnum.Emercar);
 areas.Add(AreaManager.AreaEnum.HallowedMarsh);
@@ -130,6 +132,7 @@ Listens for event named <code>RemoveSceneLoopAction</code> with payload
 <details>
     <summary>Code example:</summary>
 <pre><code>using OutwardModsCommunicator;
+...
 var payload = new EventPayload
 {
     ["actionId"] = actionId,
