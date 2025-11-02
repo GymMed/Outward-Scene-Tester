@@ -1,5 +1,11 @@
 ## Changelog
 
+### Release 0.0.3 Version
+
+#### Fixed
+
+-   Fixed readme descriptions and bumped mods communicator version.
+
 ### Release 0.0.2 Version
 
 #### Added

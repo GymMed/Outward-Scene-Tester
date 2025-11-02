@@ -21,7 +21,7 @@ namespace SceneTester
     {
         public const string GUID = "gymmed.scene_tester";
         public const string NAME = "Scene Tester";
-        public const string VERSION = "0.0.2";
+        public const string VERSION = "0.0.3";
 
         public static string prefix = "[Scene-Tester]";
 

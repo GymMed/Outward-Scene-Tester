@@ -37,7 +37,7 @@ href="https://thunderstore.io/c/outward/p/GymMed/Loot_Manager/">Loot
 Manager</a> to determining whether certain loot criteria could be applied. The
 Outward wiki does not provide all data correctly, and the game’s prefab values
 are not always listed in a consistent order. Other mods can optionally use this
-tool as a dependency to access the same event-driven scene data directly. 
+tool to access the same event-driven scene data directly. 
 </details>
 
 <details>
