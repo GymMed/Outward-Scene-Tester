@@ -31,11 +31,13 @@ Each rule is checked whenever a scene loads — ensuring your code only runs onc
  
 <details>
     <summary>Use Case</summary>
-I used this in <a
+I used this tool to retrieve raw, unique enemy data in-game. The data was later
+processed to build a dataset for <a
 href="https://thunderstore.io/c/outward/p/GymMed/Loot_Manager/">Loot
-Manager</a> to get all unique enemies data and determine if certain loot should
-be applied. Outward wiki doesn't provide all data correctly, neither the game is
-programmed in consistant order, this tool can help you to retrieve the needed scene data.
+Manager</a> to determining whether certain loot criteria could be applied. The
+Outward wiki does not provide all data correctly, and the game’s prefab values
+are not always listed in a consistent order. Other mods can optionally use this
+tool as a dependency to access the same event-driven scene data directly. 
 </details>
 
 <details>

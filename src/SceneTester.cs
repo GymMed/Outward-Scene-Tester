@@ -21,7 +21,7 @@ namespace SceneTester
     {
         public const string GUID = "gymmed.scene_tester";
         public const string NAME = "Scene Tester";
-        public const string VERSION = "0.0.1";
+        public const string VERSION = "0.0.2";
 
         public static string prefix = "[Scene-Tester]";
 
@@ -54,6 +54,7 @@ namespace SceneTester
             EventBus.RegisterEvent(
                 EVENT_LISTENER_GUID, 
                 "AddSceneLoopAction", 
+                "Add scene loop action. Provided action will execute on each area load. After each area is looped will notify with FinishedSceneLoopAction. Tip: you can store scene data in static variables to outlive and not be deleted by garbage collector.",
                 ("actionId", typeof(string), "Optional. You will need this as unique value if you want to tack(remove/listen for finish) action execution."),
                 ("action", typeof(Action), "Required. Action to execute after each area load."),
                 ("hashSetOfAreas", typeof(HashSet<AreaManager.AreaEnum>), "Required. HashSet of AreaManager.AreaEnum to fast loop through and execute \"action\" on.")
@@ -62,6 +63,7 @@ namespace SceneTester
             EventBus.RegisterEvent(
                 EVENT_LISTENER_GUID,
                 "RemoveSceneLoopAction",
+                "Remove specific scene loop action from rules list.",
                 ("actionId", typeof(string), "Required. Scene loop action id that will be removed.")
             );
 
@@ -69,6 +71,7 @@ namespace SceneTester
             EventBus.RegisterEvent(
                 ST.GUID,
                 "FinishedSceneLoopAction",
+                "Notifies which scene loop action rule looped through all of his areas.",
                 ("actionId", typeof(string), "Finished scene loop action id.")
             );
 

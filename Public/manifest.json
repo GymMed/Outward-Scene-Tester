@@ -1,10 +1,10 @@
 {
 	"name": "Scene_Tester",
-	"version_number": "0.0.1",
+	"version_number": "0.0.2",
 	"website_url": "https://github.com/GymMed/Outward-Scene-Tester",
 	"description": "Outward Scene Tester is a tool that automatically loops through scenes and executes functions from your mods.",
 	"dependencies": [
-		"GymMed-Mods_Communicator-1.1.0",
+		"GymMed-Mods_Communicator-1.2.0",
 		"sinai-dev-SideLoader-3.8.4",
 		"BepInEx-BepInExPack_Outward-5.4.19"
 	]
