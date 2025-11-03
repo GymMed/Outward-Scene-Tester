@@ -26,6 +26,25 @@ namespace OutwardSceneTester.Utility.Helpers
             ProceedFastTravel(Global.Lobby.PlayersInLobby[0].ControlledCharacter, travelData);
         }
 
+        // Not tested!
+        public static void FastTravelTo(AreaManager.AreaEnum area)
+        {
+            if(area == AreaManager.AreaEnum.HallowedDungeon4)
+            {
+                ST.LogMessage("Trying to load Hallowed_Dungeon4 (Dark Ziggurat), which doesn't work! You should use Hallowed_Dungeon4_Interior (Dark Ziggurat Interior) instead!");
+            }
+
+            string levelName = AreaManager.Instance.GetArea(area)?.SceneName;
+
+            if(string.IsNullOrEmpty(levelName))
+            {
+                ST.LogMessage($"Level Name from AreaManager.AreaEnum: {area.ToString()} is not found! Canceling travel!");
+                return;
+            }
+
+            NetworkLevelLoader.Instance.RequestSwitchArea(levelName, 0, 1.5f, false);
+        }
+
         public static void ProceedFastTravel(Character _instigator, TravelData _travelData)
         {
             if (NetworkLevelLoader.Instance.GetAllPlayerCanTravel() && GetAllPlayersOwnDLC(_instigator, true))
